@@ -1,6 +1,5 @@
 import random
 import requests
-import time 
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from bs4 import BeautifulSoup
@@ -60,11 +59,33 @@ class Wifi:
 
         # get only text from html 
         soup = BeautifulSoup(htmlContent, "html.parser")
-        print(soup.get_text())
+        self.text = soup.get_text()
+        
+        # return self.text
+        print(self.text)
     
 
+    # loop until Card number get valid
+    def INVALID_CARD(self):
+
+        if "Card number is invalid." in self.text:
+
+            while True:
+                self.driver.find_element_by_name("card_no").send_keys(self.SCRATCH_NUMBER_GENERATOR())
+                self.driver.find_element_by_css_selector("input[value=Recharge]").click()
+
+        # print(self.text)
+
+    
+    # Control all Function
+    def MAIN_FUNCTION(self):
+
+        self.AUTOFILL_CREDENTIAL()
+        self.INVALID_CARD()
 
 
 
+        
 m = Wifi()
+print(m.MAIN_FUNCTION())
 print(m.AUTOFILL_CREDENTIAL())
