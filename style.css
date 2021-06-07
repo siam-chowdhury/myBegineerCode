@@ -1,0 +1,40 @@
+
+
+#btn {
+    position: absolute;
+    top: 30%;
+    left: 45%;
+    height: 30px;
+    width: 200px;
+    border: 0px;
+    border-radius: 7px;
+    background-color: #3478DB;
+    color: #ede7f6;
+}
+
+body {
+    background-color: #1E1E1E;
+}
+
+
+input {
+    width: 20%;
+    display: block;
+    margin-left: 42%;
+    margin-top: 100px;
+    max-width: 100%;
+    border: 0px;
+    text-align: center;
+    height: 50px;
+    border-radius: 5px;
+
+}
+
+
+#demo {
+    background-color: #1E1E1E;
+    color: white;
+    font-family: monospace;
+    margin-left: 590px;
+    height: 30px;
+}
