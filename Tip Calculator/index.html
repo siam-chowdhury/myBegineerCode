@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+
+    <div class="container">
+
+        <div id="total">
+
+            <div id="aboutBill">
+                <p id="billPrmt">How much was your bill</p>
+                <input type="text" name="" id="billAmount">
+            </div>
+
+            <div id="aboutService">
+                <p id="servicePrmt">How was our service</p>
+                <div id="aboutOption">
+                    <select id="Option">
+                        <option value="30%">30% Outstanding</option>
+                        <option value="20%">20% Good</option>
+                        <option value="15%">15% It was Okay</option>
+                        <option value="10%">10% bad</option>
+                        <option value="5%">5% Terrible</option>
+                    </select>
+                </div>
+            </div>
+
+            <div id="aboutPpl">
+                <p id="aboutppl">How many people are sharing the bill ?</p>
+                <input type="text" name="" id="pplAmount">
+            </div>
+
+
+            <div id="aboutBtn">
+                <button id="btn" onclick="get_data()" >Calculate</button>
+            </div>
+
+            <div id="showTip">
+                <p id="tipprmt">tip amount</p>
+                <sup>$</sup> <span id="tip">0.00</span>
+                <small id="each">each</small>
+            </div>
+        
+        </div>
+
+    </div>
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
