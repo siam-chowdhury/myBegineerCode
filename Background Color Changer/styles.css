@@ -1,0 +1,20 @@
+
+
+
+
+
+#container {
+    text-align: center;   
+}
+
+#msg {
+    margin: 20%;
+}
+
+#click {
+    padding: 10px;
+    background-color: darkmagenta;
+    color: aliceblue;
+    border-radius: 5px;
+
+}
